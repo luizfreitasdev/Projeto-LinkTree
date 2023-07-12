@@ -25,7 +25,7 @@
   --switch-bg: url(./assets/Sun.svg)
 }
 body {
-  background: var(--background) no-repeat top center/cover;
+  background: var(--background) no-repeat top /cover;
 }
 
 body * {
