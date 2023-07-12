@@ -77,13 +77,17 @@ body * {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 0;
+  animation: slide-out 0.4s forwards;
   transform: translateY(-50%);
 }
 
+#switch button:hover {
+  outline: 6px solid var(--background-hover);
+}
+
+/* fowards server para manter a posição no fim da animação */
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -156,13 +160,33 @@ footer {
   font-size: 14px;
 }
 
-/* Media queries */
+/* Media queries serve para colocar breakpoints, a imagem vai mudar quando chegar no limite de pixels, */
 @media (max-width: 700px) {
-:root {
-  --background: url(./assets/bg-mobile-dark.jpg);
+  :root {
+    --background: url(./assets/bg-mobile-dark.jpg);
+  }
+
+  .light {
+    --background: url(./assets/bg-mobile-light.jpg);
+  }
 }
 
-.light {
-  --background: url(./assets/bg-mobile-light.jpg);
+/* animation: animação do botão switch usando keyframes*/
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
