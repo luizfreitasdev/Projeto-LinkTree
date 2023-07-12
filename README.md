@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
-Utilizei javascript para alternar entre o modo escuro e o modo claro.
+<br> Utilizei javascript para alternar entre o modo escuro e o modo claro.
 
 - [Acesse o projeto finalizado, online](https://luizfreitasdev.github.io/Projeto-LinkTree/)
 
